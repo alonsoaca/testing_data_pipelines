@@ -12,10 +12,10 @@ def process_data(df: pd.DataFrame) -> pd.DataFrame:
     df_output['age'] = pd.to_numeric(df_output['age'], errors='coerce')
 
     # Correct line of code
-    #df_output = df_output.assign(age = lambda x: x.age.fillna(x.age.mean()).astype('int'))
+    df_output = df_output.assign(age = lambda x: x.age.fillna(x.age.mean()).astype('int'))
 
     # Code with bug
-    df = df_output.assign(age = lambda x: x.age.fillna(x.age.mean()).astype('int'))
+    #df = df_output.assign(age = lambda x: x.age.fillna(x.age.mean()).astype('int'))
         
     return df_output
 def run_pipeline(input_path: str, output_path: str, save = True) -> pd.DataFrame:
