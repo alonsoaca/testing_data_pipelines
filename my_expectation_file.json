@@ -1,0 +1,53 @@
+{
+    "data_asset_type": "Dataset",
+    "expectation_suite_name": "default",
+    "expectations": [
+        {
+            "expectation_type": "expect_table_columns_to_match_set",
+            "kwargs": {
+                "column_set": [
+                    "passengerid",
+                    "pclass",
+                    "survived",
+                    "sex",
+                    "age",
+                    "sibsp",
+                    "parch",
+                    "fare",
+                    "cabin",
+                    "embarked"
+                ]
+            },
+            "meta": {}
+        },
+        {
+            "expectation_type": "expect_column_values_to_not_be_null",
+            "kwargs": {
+                "column": "age"
+            },
+            "meta": {}
+        },
+        {
+            "expectation_type": "expect_column_values_to_be_unique",
+            "kwargs": {
+                "column": "passengerid"
+            },
+            "meta": {}
+        },
+        {
+            "expectation_type": "expect_column_values_to_be_in_set",
+            "kwargs": {
+                "column": "sex",
+                "value_set": [
+                    "male",
+                    "female"
+                ]
+            },
+            "meta": {}
+        }
+    ],
+    "ge_cloud_id": null,
+    "meta": {
+        "great_expectations_version": "0.15.25"
+    }
+}
