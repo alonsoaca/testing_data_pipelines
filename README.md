@@ -14,7 +14,9 @@ Other useful sites:
 * https://pulipulichen.github.io/jieba-js/weka/arff2csv/
 * https://medium.com/towards-data-science/how-to-test-pandas-etl-data-pipeline-e49fb5dac4ce
 * https://learn.microsoft.com/en-us/azure/databricks/workflows/delta-live-tables/delta-live-tables-quickstart
+* https://learn.microsoft.com/en-us/azure/databricks/workflows/delta-live-tables/delta-live-tables-expectations
 * [Tutorial for unit testing on Great Expectations](https://www.comet.com/standardizing-experiment/hackernews-data-expectations/reports/unit-test-your-data-with-great-expectations)
+* https://docs.greatexpectations.io/docs/reference/data_docs/
 
 Init Great Expectations folder to generate Data Docs:
 ```
